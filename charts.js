@@ -117,7 +117,7 @@ function buildCharts(sample) {
   x: otu_ids,
   y: sample_values,
   text: otu_labels,
-  type: "bubble",
+  mode: "markers",
   marker: {
     size : sample_values,
     color: otu_ids
