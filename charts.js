@@ -60,7 +60,7 @@ function buildCharts(sample) {
     // 3. Create a variable that holds the samples array. 
     console.log(data);
     var sampleArray = data.samples;
-    var metadataArray = data.metadata
+    var metadataArray = data.metadata;
     // 4. Create a variable that filters the samples for the object with the desired sample number.
     var filteredArray = sampleArray.filter(sampleObj => sampleObj.id == sample);
     var filteredMetadata = metadataArray.filter(sampleObj => sampleObj.id == sample);
@@ -113,19 +113,19 @@ function buildCharts(sample) {
 
 //Deliverable 2 - copying starter code from steps 1-3 from BellyButton_bubble_starter_code:
  // 1. Create the trace for the bubble chart.
- var bubbleData = [
-  {
+ var bubbleData = [{
+  x: otu_ids,
+  y: sample_values,
+  text: otu_labels,
   type: "bubble",
-  x: "otu_ids",
-  y: "sample_values",
-  text: "otu_labels",
-  mode: "markers",
   marker: {
-    size : "sample_values",
-    color: "otu_ids"
+    size : sample_values,
+    color: otu_ids
   }
-  }
+}
 ];
+
+var data = [bubbleData];
 
 // 2. Create the layout for the bubble chart.
 var bubbleLayout = {
@@ -135,11 +135,12 @@ var bubbleLayout = {
   },
   hovermode: 'closest',
   paper_bgcolor: '#F0F8FF',
-  plot_bgcolor: '#F0F8FF'
+  plot_bgcolor: '#F0F8FF',
+  showlegend: false,
 };
 
 // 3. Use Plotly to plot the data with the layout.
-Plotly.newPlot("buble", bubbleData, bubbleLayout); 
+Plotly.newPlot("bubble", bubbleData, bubbleLayout); 
 
 //Deliverable 3 - copying questions 4 - 6
 
@@ -153,7 +154,7 @@ var gaugeData = [
     axis: { range: [null, 10], tickcolor: "black" },
     bar: { color: "black" },
     bgcolor: "white",
-    borderwidth: 2,
+    borderwidth: 1,
     bordercolor: "gray",
     steps: [
       { range: [0, 2], color: "red" },
