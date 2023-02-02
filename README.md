@@ -47,6 +47,8 @@ In this project, we are helping Roza complete the dashboard. We are visualzing t
   - The gauge fits in the margin of the <div> element.
 * When the webpage loads, the bar and bubble chart are working according to the requirements in Deliverable 1 and 2, respectively, and the gauge chart is working according to the requirements listed for this Deliverable. 
 
+![Gauge%20chart](https://github.com/cbrito3/plotlydiploy/blob/main/Gauge%20chart.png)
+
 ## Customize the Dashboard
 * The webpage has three customizations. 
 * When the dashboard is first opened in a browser, ID 940’s data should be displayed in the dashboard, and all three charts should be working according to the requirements when a sample is selected from the dropdown menu. 
