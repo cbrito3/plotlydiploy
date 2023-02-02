@@ -1,25 +1,30 @@
 # Belly Button Biodiversity Using Plotly
 In this project, we are helping Roza complete the dashboard. We are visualzing the bacterial data for each volunteer, we have to able to identify the top 10 bacterial species in their belly buttons. That way, if Improbable Beef identifies a species as a candidate to manufacture synthetic beef, Roza's volunteers will be able to identify whether that species is found in their navel.
 
-Based on the information we were provided the following link shows the dashboard to identify the bellybutton diversity: 
+## Deliverables: 
+* Deliverable 1: Create a Horizontal Bar Chart
+* Deliverable 2: Create a Bubble Chart
+* Deliverable 3: Create a Gauge Chart
+* Deliverable 4: Customize the Dashboard
 
+## Create a Horizontal Bar Chart 
+* To produce a Horizontal Bar Chart the following was created:
+  - Code is written to create the arrays when a sample is selected from the dropdown menu 
+  - Code is written to create the trace object in the buildCharts() function, and it contains the following: 
+    - The y values are the otu_ids in descending order.
+    - The x values are the sample_values in descending order.
+    - The hover text is the otu_labels in descending order.
+  - Code is written to create the layout array in the buildCharts() function that creates a title for the chart
+  - When the dashboard is first opened in a browser, ID 940’s data should be displayed in the dashboard, and the bar chart has the following: 
+    - The top 10 sample_values are sorted in descending order
+    - The top 10 sample_values as values
+    - The otu_ids as the labels
+    
 ## Website
 
 Interactive Webpage can be found here: https://cbrito3.github.io/plotlydiploy/
 
-Deliverable 1: Create a Horizontal Bar Chart (35 points)
-
-You will earn a perfect score for Deliverable 1 by completing all requirements below:
-Code is written to create the arrays when a sample is selected from the dropdown menu (10 pt)
-Code is written to create the trace object in the buildCharts() function, and it contains the following: (10 pt)
-The y values are the otu_ids in descending order
-The x values are the sample_values in descending order
-The hover text is the otu_labels in descending order.
-Code is written to create the layout array in the buildCharts() function that creates a title for the chart (5 pt)
-When the dashboard is first opened in a browser, ID 940’s data should be displayed in the dashboard, and the bar chart has the following: (10 pt)
-The top 10 sample_values are sorted in descending order
-The top 10 sample_values as values
-The otu_ids as the labels
+    
 Deliverable 2: Create a Bubble Chart (30 points)
 
 You will earn a perfect score for Deliverable 2 by completing all requirements below:
