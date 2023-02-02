@@ -35,6 +35,8 @@ In this project, we are helping Roza complete the dashboard. We are visualzing t
 * The text for a bubble is shown when hovered over
 * When the dashboard is first opened in a browser, ID 940’s data should be displayed in the dashboard. All three charts should also be working according to their requirements when a sample is selected from the dropdown menu. 
 
+![Bubble%20plot](https://github.com/cbrito3/plotlydiploy/blob/main/Bubble%20plot.png)
+
 ## Gauge Chart 
 * The code to build the gauge chart does the following: 
   - Creates a title for the chart.
